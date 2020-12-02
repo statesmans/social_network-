@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    
+  }       
+  
+  .app-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "head head"
+                         "aside cont";
+  
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 20px;
+    padding: 10px;
+  }
+
+/* 
+////////////////////////////////////////////////
+
+HEADER
+
+////////////////////////////////////////////////
+*/
+  .header {         
+    display: grid;
+    grid-area: head;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(38, 121, 165);
+
+    &__logo {
+      width: 45px ;
+      height: 45px;
+      background-color: transparent;
+    }
+  }
+
+
+  /* 
+////////////////////////////////////////////////
+
+ASIDE
+
+////////////////////////////////////////////////
+*/
+  
+  
+  .nav {
+    grid-area: aside;
+    height: 100%;
+    padding: 10px;
+    background-color: rgb(38, 121, 165);
+
+    &__item {
+      display: block;
+      font-size: 23px;
+      color: #fff;
+      transition: color .3s ease-out;
+
+      &:last-child {
+        margin-top: 30px;
+      }
+
+      &:hover {
+        color: rgb(189, 55, 55);
+      }
+    }
+
+  }
+  
+  
+/* 
+////////////////////////////////////////////////
+
+MAIN
+
+////////////////////////////////////////////////
+*/
+  
+.account {
+  grid-area: cont;
+
+  &__top-bg img{
+    width: 100%; 
+    max-height: 224px;
+    margin-bottom: 20px;   
+  }  
+ 
+ 
+}
+
+.user {
+   
+  &__block {
+    display: flex;
+     
+  }  
+
+  &__image {
+    width: 175px;
+    height: 165px;
+    margin-right: 45px;
+  }
+
+    
+}
+
+.info {
+
+  &__name {
+    font-size: 35px;
+    padding-bottom: 35px; 
+
+  } 
+
+  &__main {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+
+  &__title {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  &__input {
+    height: 85px;
+    padding: 10px 0 0 20px;
+    margin-bottom: 25px;
+    font-size: 27px;
+    color: #B0B8C2;
+    background-color: #E6EEEA;
+    border: none;
+    border-radius: 3px;
+    resize: none;
+  }
+
+  &__send-btn {
+    width: 162px;
+    align-self: flex-end;
+    font-size: 26px;
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: rgb(38, 121, 165);
+    border: none;
+    transition: background-color, color .2s cubic-bezier(.3,.97,.77,.98);
+
+    &:hover {
+      color: rgb(189, 55, 55);
+      background-color: rgb(27, 106, 149);
+      cursor: pointer;
+    }
+  }
+}
+
+.post-list {
+
+  margin-top: 45px;
+  &__post {
+    display: flex;
+    height: 150px;
+  }
+
+  &__user-logo {
+    height: 58px;
+    width: 58px;
+    margin-right: 35px;
+    border-radius: 50%;
+  }
+
+  &__message {
+    font-size: 26px;
+  }
+}
