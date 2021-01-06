@@ -1,0 +1,52 @@
+
+  
+  .posts {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 20px;
+  
+    &__title {
+      font-size: 35px;
+      margin-bottom: 25px;
+    }
+  
+    &__input {
+      height: 85px;
+      padding: 10px 0 0 20px;
+      margin-bottom: 25px;
+      font-size: 27px;
+      color: #B0B8C2;
+      background-color: #E6EEEA;
+      border: none;
+      border-radius: 3px;
+      resize: none;
+    }
+  
+    &__btn {
+      width: 162px;
+      align-self: flex-end;
+      font-size: 26px;
+      text-align: left;
+      padding: 5px 10px;
+      border-radius: 2px;
+      color: #fff;
+      background-color: rgb(38, 121, 165);
+      border: none;
+      transition: background-color, color .2s cubic-bezier(.3,.97,.77,.98);
+  
+      &:hover {
+        color: rgb(189, 55, 55);
+        background-color: rgb(27, 106, 149);
+        cursor: pointer;
+      }
+    }
+
+
+
+
+  }
+  
+  .list {
+    margin-top: 45px;
+   
+  }

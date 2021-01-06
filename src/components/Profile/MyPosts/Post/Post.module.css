@@ -1,0 +1,18 @@
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+}
+
+.post__logo {
+  height: 58px;
+  width: 58px;
+  margin-right: 35px;
+  border-radius: 50%;
+}
+
+.post__message {
+  font-size: 26px;
+}
+/*# sourceMappingURL=Post.module.css.map */

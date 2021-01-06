@@ -1,0 +1,16 @@
+.friends {
+
+
+
+    &__title {
+        font-size: 35px;
+        color: #fff;
+        margin-bottom: 15px;
+
+    }
+
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

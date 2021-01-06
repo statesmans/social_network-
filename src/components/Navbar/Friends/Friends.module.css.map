@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIK,AAAD,eAAQ,CAAC;EACL,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,IAAI;EACX,aAAa,EAAE,IAAI;CAEtB;;AAEA,AAAD,cAAO,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,UAAU;CAC9B",
+    "sources": [
+        "Friends.module.scss"
+    ],
+    "names": [],
+    "file": "Friends.module.css"
+}

@@ -1,0 +1,15 @@
+.friends__title {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.friends__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+/*# sourceMappingURL=Friends.module.css.map */

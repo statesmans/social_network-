@@ -1,0 +1,45 @@
+
+  
+.nav {
+ grid-area: aside;
+ height: auto;
+ padding: 10px 0 10px 10px;
+ background-color: rgb(38, 121, 165);
+
+  &__links {
+    margin-bottom: 85px;
+  }
+
+  &__link {
+    display: block;
+    padding: 0 10px 0 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    border-radius: 3px 0 0 3px;
+
+    color: #fff;
+    background-color: transparent;
+    transition: background-color .3s ease-out;
+  
+    &.active {
+      background-color: #fff;
+      color:  rgb(38, 121, 165);
+
+      &:hover {
+        background-color: rgb(187, 243, 255);
+      }
+    }
+
+
+
+    &:last-child {
+      margin-top: 30px;
+    }
+
+    &:hover {
+      background-color: rgb(27, 211, 252);
+    }
+ } 
+}
+  

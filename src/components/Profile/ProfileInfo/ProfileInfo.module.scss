@@ -1,0 +1,41 @@
+
+.account {
+    &__top img{
+        width: 100%; 
+        max-height: 224px;
+        margin-bottom: 20px;   
+    }  
+}
+
+
+.user {
+
+    &__block {
+      display: flex;  
+      margin-bottom: 35px;  
+      padding: 0 20px;   
+  
+    }  
+  
+    &__image {
+      width: 175px;
+      height: 165px;
+      margin-right: 45px;
+    }
+      
+}
+  
+.info {
+  
+    &__name {
+      font-size: 35px;
+      padding-bottom: 35px; 
+  
+    } 
+  
+    &__main {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+  
+}

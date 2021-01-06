@@ -1,0 +1,30 @@
+
+.messages {
+
+    &__block{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    &__list {
+        display: grid;
+        align-items: end;
+        height: 614px;
+        overflow: auto;
+    }
+
+
+    &__input {
+        height: 80px;
+        padding: 10px;
+        border: 2px solid #2679a5;
+        font-size: 17px;
+        resize: none;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 2px 2px#06344d;
+        }
+    }
+} 

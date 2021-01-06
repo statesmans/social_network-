@@ -1,0 +1,15 @@
+.header {         
+    display: grid;
+    grid-area: head;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(38, 121, 165);
+
+    &__logo {
+      width: 45px ;
+      height: 45px;
+      background-color: transparent;
+    }
+  }
+
+  

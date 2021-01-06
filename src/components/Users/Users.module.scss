@@ -1,0 +1,17 @@
+.users {
+    
+}
+
+.pageNum {
+    color: #2679a5;
+    cursor: pointer;
+    &:hover {
+        color: #bbf3ff;
+    }
+}
+
+.selectedPage {
+    color: #13577b;
+    font-weight: bold;
+
+}

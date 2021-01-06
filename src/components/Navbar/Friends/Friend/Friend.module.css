@@ -1,0 +1,23 @@
+.friend {
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-transition: background-color .3s ease-in;
+  -o-transition: background-color .3s ease-in;
+  transition: background-color .3s ease-in;
+}
+
+.friend:hover {
+  background-color: #98e4f6;
+  color: #2679a5;
+}
+
+.friend__image {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-bottom: 7px;
+}
+/*# sourceMappingURL=Friend.module.css.map */
