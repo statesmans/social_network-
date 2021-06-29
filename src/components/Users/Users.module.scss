@@ -1,6 +1,3 @@
-.users {
-    
-}
 
 .pageNum {
     color: #2679a5;
@@ -14,4 +11,24 @@
     color: #13577b;
     font-weight: bold;
 
+}
+
+.paginationUl {
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.preloader {
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+}
+
+.user {
+    &[disabled] {
+        background-color: #fff;
+    }
 }

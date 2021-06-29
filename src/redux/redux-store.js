@@ -3,10 +3,12 @@ import messagesReducer from "./messages-reducer";
 import profileReducer from "./profile-reducer";
 import sideBarReducer from "./sideBar-reducer";
 import usersReducer from "./users-reducer";
+import authReducer from "./auth-reducer"
 
 
 
 let reducePatch = combineReducers({
+    auth: authReducer,
     profilePage: profileReducer,
     messagesPage: messagesReducer,
     sideBar: sideBarReducer,

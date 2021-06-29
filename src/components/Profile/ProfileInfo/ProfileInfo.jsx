@@ -1,23 +1,35 @@
 
 import s from './ProfileInfo.module.scss'
 
-const ProfileInfo = () => {
+const ProfileInfo = (props) => {
+    
     return (
         <div className={s.account__info}>
             <div className={s.account__top}>
                 <img src="https://capitaltreeaccounting.com/wp-content/uploads/2016/01/account-bg.jpg" alt="Acc bg"/>
             </div>
             <div className={s.user__block}>
-                <img className={s.user__image} src="https://polarr-ppe-assets.s3-us-west-1.amazonaws.com/onboarding/01_03_preview_2x.jpg" alt="user-img" />
+                <img className={s.user__image} src={props.profile.photos.small} alt="user-img" />
 
                 <div className={s.info}>
-                    <h3 className={s.info__name}>Yegor S.</h3>
+                    <h3 className={s.info__name}>{props.profile.fullName}</h3>
 
                     <div className={s.info__main}>
-                        <p className="info__birth">Date of Birth: 14 May</p>
-                        <p className="info__city">City: Poltava</p>
-                        <p className="info__education">Education: PPFC "NTU" KhPI</p>
-                        <p className="info__web-site">Web Sire: github.com/statesmans</p>
+                        <p className={s.info__item}>Date of Birth: 14 May</p>
+                        <p className={s.info__item}>City: Poltava</p>
+                        <p className={s.info__item}>Education: PPFC "NTU" KhPI</p>
+                        <p className={s.info__item}>Web Site: {props.profile.contacts.website}</p>
+                        <p className={s.info__item}>About me: {props.profile.aboutMe}</p>
+                        <div className={s.info__contacts}>
+                            <p className={s.info__contactsTitle}>Contacts:</p> 
+                            <div className={s.info__contactsLinks}>
+                                <a className={s.info__contactsLink} href={props.profile.contacts.facebook} >{props.profile.contacts.facebook}</a>
+                                <a className={s.info__contactsLink} href={props.profile.contacts.github} >{props.profile.contacts.github}</a>
+                                <a className={s.info__contactsLink} href={props.profile.contacts.instagram} >{props.profile.contacts.instagram}</a>
+                                <a className={s.info__contactsLink} href={props.profile.contacts.twitter} >{props.profile.contacts.twitter}</a>
+                                <a className={s.info__contactsLink} href={props.profile.contacts.vk} >{props.profile.contacts.vk}</a>
+                            </div>    
+                        </div>
                     </div>
                 </div>
             </div>

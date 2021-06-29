@@ -37,5 +37,23 @@
       font-size: 26px;
       margin-bottom: 10px;
     }
-  
+
+    &__contacts {
+      display: flex;
+    }
+
+    &__contactsLinks {
+      display: flex;
+      flex-direction: column;
+      padding-left: 25px;
+
+      a {
+        color: #2679a5;
+        
+        &:hover {
+          color: #135376;
+        }
+      }
+    }
+
 }

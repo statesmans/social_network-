@@ -1,14 +1,46 @@
 .header {         
     display: grid;
     grid-area: head;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 10px 20px;
     background-color: rgb(38, 121, 165);
 
     &__logo {
-      width: 45px ;
-      height: 45px;
-      background-color: transparent;
+      width: 75px;
+      height: 34px;
+      img {
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+      }
+    }
+
+
+    &__loginBtn {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: #fff;
+      img {
+        height: 40px; 
+        margin-right: 10px;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 75px;
+        border-radius: 4px;
+        background-color:#1bd3fc;
+
+        &:hover {
+          background-color: #16abcd;
+        }
+      }
     }
   }
 
